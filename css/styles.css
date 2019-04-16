@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size:1.3em;
+  text-align:center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  background-color:rgb(45, 57, 69);
+  margin-top: 0;
+  margin-bottom:0;
+  padding-top:40px;
+  padding-bottom:40px;
+  font-size: 1.3em;
+  letter-spacing: .05em;
+}
+
+h2,
+h3 {
+  margin:0 auto;
+  font-size: 1.25em;
+  color: rgb(45, 57, 69);
+}
+
+p {
+  color:rgba(45, 57, 69, 0.4);
+}
+
+header div {
+  border-bottom:3px solid rgb(45, 57, 69);
+}
+
+form {
+  color: rgba(45, 57, 69, 0.75);
+}
+
+form,
+p {
+  font-weight:300;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding-left:0;
+  padding-right:0;
+}
+
+legend {
+  text-align: left;
+}
+
+/* CLASS STYLES */
+
+.main-padding {
+  width: 90%;
+  margin: 45px auto 0;
+}
+
+.header-p {
+  border-bottom:6px solid rgb(45, 57, 69);
+  margin-bottom:5px;
+  padding-bottom: 40px;
+
+  line-height:1.5;
+}
