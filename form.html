@@ -35,7 +35,8 @@
 
             <div class="phone-field field">
               <label for="contact-phone">Phone Number</label>
-              <input type="tel" id="contact-phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(XXX)-XXX-XXXX">
+              <input type="tel" id="contact-phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(XXX)-XXX-XXXX" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '(XXX)-XXX-XXXX'">
             </div>
 
             <div class="street-field field">
@@ -51,12 +52,12 @@
             <div class="state-field field">
               <label for="contact-state">State</label>
               <select id="contact-state" name="user_state">
-                <option value="" disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;Choose State</option>
+                <option value="" disabled selected>Choose State</option>
                 <optgroup label="State">
                   <option value="massachusetts">MA</option>
                   <option value="rhode-island">RI</option>
                   <option value="vermont">VT</option>
-                  <option value="new-hampshire">MA</option>
+                  <option value="new-hampshire">NH</option>
                   <option value="connecticut">CT</option>
                   <option value="maine">ME</option>
                 </optgroup>
@@ -73,7 +74,9 @@
             <legend><h3>Newsletter</h3></legend>
 
             <div class="receive-field">
-              <label>Select the newsletters you would like to receive</label>
+              <div class="newsletter-receive-label option">
+                <label>Select the newsletters you would like to receive</label>
+              </div>
               <div class="html-opt option">
                 <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-html" value="html-news"><label for="newsletter-receive-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML News</label>
               </div>
@@ -86,15 +89,20 @@
             </div>
 
             <div class="format-field">
-              <label>Newsletter format</label>
-              <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML</label><br>
-              <input type="radio" name="user_newsletter-format" id="newsletter-receive-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
-            </div>
+              <div class="newsletter-format-label option">
+                <label>Newsletter format</label>
+              </div>
+              <div class="html-format option">
+                <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML</label>
+              </div>
+              <div class="plain-text-format option">
+                <input type="radio" name="user_newsletter-format" id="newsletter-receive-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
+              </div>
           </fieldset>
 
           <div class="other-topics-field">
             <label for="newsletter-other">Other topics you'd like to hear about</label>
-            <textarea name="user_other-topics" id="newsletter-other"></textarea>
+            <div><textarea name="user_other-topics" id="newsletter-other"></textarea></div>
           </div>
 
           <div class="submit-button">
