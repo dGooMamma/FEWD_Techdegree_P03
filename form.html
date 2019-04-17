@@ -29,63 +29,77 @@
             </div>
 
             <div class="email-field field">
-            <label for="contact-email">Email Address</label>
-            <input type="email" id="contact-email" name="user_email" placeholder="Required" required>
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="user_email" placeholder="Required" required>
             </div>
 
             <div class="phone-field field">
-            <label for="contact-phone">Phone Number</label>
-            <input type="tel" id="contact-phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(XXX)-XXX-XXXX">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(XXX)-XXX-XXXX">
             </div>
 
             <div class="street-field field">
-            <label for="contact-street">Street Address</label>
-            <input type="text" id="contact-street" name="user_street">
+              <label for="contact-street">Street Address</label>
+              <input type="text" id="contact-street" name="user_street">
             </div>
 
             <div class="city-field field">
-            <label for="contact-city">City</label>
-            <input type="text" name="user_city" id="contact-city">
+              <label for="contact-city">City</label>
+              <input type="text" name="user_city" id="contact-city">
             </div>
 
             <div class="state-field field">
-            <label for="contact-state">State</label>
-            <select id="contact-state" name="user_state">
-              <option value="" disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;Choose State</option>
-              <optgroup label="State">
-                <option value="massachusetts">MA</option>
-                <option value="rhode-island">RI</option>
-                <option value="vermont">VT</option>
-                <option value="new-hampshire">MA</option>
-                <option value="connecticut">CT</option>
-                <option value="maine">ME</option>
-              </optgroup>
-            </select>
+              <label for="contact-state">State</label>
+              <select id="contact-state" name="user_state">
+                <option value="" disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;Choose State</option>
+                <optgroup label="State">
+                  <option value="massachusetts">MA</option>
+                  <option value="rhode-island">RI</option>
+                  <option value="vermont">VT</option>
+                  <option value="new-hampshire">MA</option>
+                  <option value="connecticut">CT</option>
+                  <option value="maine">ME</option>
+                </optgroup>
+              </select>
             </div>
 
             <div class="zip-field field">
-            <label for="contact-zip">Zip Code</label>
-            <input type="text" name="user_zip" id="contact-zip">
+              <label for="contact-zip">Zip Code</label>
+              <input type="text" name="user_zip" id="contact-zip">
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="newsletter">
             <legend><h3>Newsletter</h3></legend>
 
-            <label>Select the newsletters you would like to receive</label>
-            <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-html" value="html-news"><label for="newsletter-receive-html">HTML News</label><br>
-            <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-css" value="css-news"><label for="newsletter-receive-css">CSS News</label><br>
-            <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-javascript" value="javascript-news"><label for="newsletter-receive-javascript">Javascript News</label>
+            <div class="receive-field">
+              <label>Select the newsletters you would like to receive</label>
+              <div class="html-opt option">
+                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-html" value="html-news"><label for="newsletter-receive-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML News</label>
+              </div>
+              <div class="css-opt option">
+                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-css" value="css-news"><label for="newsletter-receive-css">&nbsp;&nbsp;&nbsp;&nbsp;CSS News</label>
+              </div>
+              <div class="javascript-opt option">
+                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-javascript" value="javascript-news"><label for="newsletter-receive-javascript">&nbsp;&nbsp;&nbsp;&nbsp;Javascript News</label>
+              </div>
+            </div>
 
-            <label>Newsletter format</label>
-            <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">HTML</label><br>
-            <input type="radio" name="user_newsletter-format" id="newsletter-receive-plain" value="plain-text-format"><label for="newsletter-format-plain">Plain text</label>
+            <div class="format-field">
+              <label>Newsletter format</label>
+              <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML</label><br>
+              <input type="radio" name="user_newsletter-format" id="newsletter-receive-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
+            </div>
           </fieldset>
 
-          <label for="newsletter-other">Other topics you'd like to hear about</label>
-          <textarea name="user_other-topics" id="newsletter-other"></textarea>
+          <div class="other-topics-field">
+            <label for="newsletter-other">Other topics you'd like to hear about</label>
+            <textarea name="user_other-topics" id="newsletter-other"></textarea>
+          </div>
 
-          <button type="submit" name="button">Sign Up</button>
+          <div class="submit-button">
+            <button type="submit" name="button">Sign Up</button>
+          </div>
         </form>
 
       </main>
