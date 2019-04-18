@@ -208,3 +208,53 @@ label,
 .option {
   align-self:flex-start;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:768px) {
+
+  .main-padding {
+    max-width:950px;
+  }
+
+  .contact-info,
+  .field {
+    flex-direction: row;
+    align-items:center;
+  }
+
+  .contact-info label {
+    margin-right:auto;
+    text-align:left;
+    align-self:center;
+  }
+
+  .contact-info input,
+  .contact-info select {
+    flex:3;
+  }
+
+
+  .contact-info label {
+    flex:1;
+  }
+
+  .zip-field {
+    position:relative;
+    padding-top: 20px;
+  }
+
+  #contact-zip  {
+    width:30%;
+    position:absolute;
+    right:45%;
+
+  }
+
+
+
+
+
+}
