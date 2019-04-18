@@ -226,30 +226,35 @@ label,
   }
 
   .contact-info label {
-    margin-right:auto;
     text-align:left;
     align-self:center;
   }
 
-  .contact-info input,
+  .contact-info input:not([id="contact-zip"]),
   .contact-info select {
     flex:3;
   }
 
 
-  .contact-info label {
+  .contact-info label:not([for="contact-zip"]) {
     flex:1;
   }
 
   .zip-field {
     position:relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+  }
+
+  label[for="contact-zip"] {
+    flex:.25;
   }
 
   #contact-zip  {
-    width:30%;
-    position:absolute;
-    right:45%;
+    max-width:300px;
+    flex:3;
+    /* position:absolute;
+    right:45%; */
+
 
   }
 
