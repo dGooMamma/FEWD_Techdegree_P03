@@ -26,7 +26,14 @@ h2,
 h3 {
   margin:0 auto;
   font-size: 1.25em;
+}
+
+h2 {
   color: rgb(45, 57, 69);
+}
+
+.newletter-bg h3 {
+  color: white;
 }
 
 p {
@@ -67,6 +74,7 @@ select {
   border-radius:5px;
   text-indent: 30px;
   line-height: 1.5;
+  transition: background-color .5s;
 }
 
 select {
@@ -109,6 +117,7 @@ button {
   padding-bottom:25px;
   border-radius: 5px;
   margin: 40px auto;
+  transition: background-color .5s;
 }
 
 /* PSEUDO-ELEMENT STYLES */
@@ -140,7 +149,7 @@ input[placeholder*="XXX"]::placeholder {
 }
 
 .contact-info {
-  border-bottom: 3px solid rgb(45, 57, 69);
+  /* border-bottom: 3px solid rgb(45, 57, 69); */
   padding-bottom: 40px;
   margin-bottom:0;
 }
@@ -148,10 +157,6 @@ input[placeholder*="XXX"]::placeholder {
 .field {
   padding-top:10px;
   padding-bottom:10px;
-}
-
-.newsletter {
-  margin-top:40px;
 }
 
 .receive-field label:first-child,
@@ -165,7 +170,31 @@ input[placeholder*="XXX"]::placeholder {
 .option {
   padding-bottom:10px;
   padding-top:10px;
+}
 
+.html-opt,
+.css-opt,
+.javascript-opt,
+.html-format,
+.plain-text-format {
+  position:relative;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position:absolute;
+  bottom:17px;
+}
+
+input[type="checkbox"] {
+  transform:scale(1.2);
+}
+
+.newsletter-bg {
+  background-color: rgb(45, 57, 69);
+  padding-top:20px;
+  padding-bottom: 40px;
+  color:white;
 }
 
 /* PSEUDO-CLASS STYLES */
@@ -179,10 +208,17 @@ select:focus,
 textarea:focus {
   outline-color: rgb(13, 48, 101);
   text-indent: 30px;
+  background-color: rgb(45, 57, 69,.2);
+  transition: background-color 1s;
 }
 
 button:focus {
   outline-color: rgb(13, 48, 101);
+}
+
+button:hover {
+  background-color:rgb(45, 57, 69);
+  transition: all .5s;
 }
 
 /* ID STYLES */
@@ -214,6 +250,16 @@ label,
 /* MEDIA QUERIES */
 
 @media (min-width:768px) {
+
+  h1 {
+    font-size:1.1em;
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+
+  .contact-info legend {
+    margin-bottom:20px;
+  }
 
   .main-padding {
     max-width:950px;

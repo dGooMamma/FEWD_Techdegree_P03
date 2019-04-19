@@ -18,10 +18,10 @@
       </div>
     </header>
 
-    <div class="main-padding">
+    <div class="">
       <main>
         <form class="" action="form.html" method="post">
-          <fieldset class="contact-info">
+          <fieldset class="contact-info main-padding">
             <legend><h3>Contact Information</h3></legend>
             <div class="name-field field">
               <label for="contact-name">Full Name</label>
@@ -70,44 +70,46 @@ onblur="this.placeholder = '(XXX)-XXX-XXXX'">
             </div>
           </fieldset>
 
-          <fieldset class="newsletter">
-            <legend><h3>Newsletter</h3></legend>
+          <div class="newsletter-bg">
+            <fieldset class="newsletter main-padding">
+              <legend><h3>Newsletter</h3></legend>
 
-            <div class="receive-field">
-              <div class="newsletter-receive-label option">
-                <label>Select the newsletters you would like to receive</label>
+              <div class="receive-field">
+                <div class="newsletter-receive-label option">
+                  <label>Select the newsletters you would like to receive</label>
+                </div>
+                <div class="html-opt option">
+                  <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-html" value="html-news"><label for="newsletter-receive-html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML News</label>
+                </div>
+                <div class="css-opt option">
+                  <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-css" value="css-news"><label for="newsletter-receive-css">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS News</label>
+                </div>
+                <div class="javascript-opt option">
+                  <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-javascript" value="javascript-news"><label for="newsletter-receive-javascript">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Javascript News</label>
+                </div>
               </div>
-              <div class="html-opt option">
-                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-html" value="html-news"><label for="newsletter-receive-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML News</label>
-              </div>
-              <div class="css-opt option">
-                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-css" value="css-news"><label for="newsletter-receive-css">&nbsp;&nbsp;&nbsp;&nbsp;CSS News</label>
-              </div>
-              <div class="javascript-opt option">
-                <input type="checkbox" name="user_newsletter-receive" id="newsletter-receive-javascript" value="javascript-news"><label for="newsletter-receive-javascript">&nbsp;&nbsp;&nbsp;&nbsp;Javascript News</label>
-              </div>
+
+              <div class="format-field">
+                <div class="newsletter-format-label option">
+                  <label>Newsletter format</label>
+                </div>
+                <div class="html-format option">
+                  <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</label>
+                </div>
+                <div class="plain-text-format option">
+                  <input type="radio" name="user_newsletter-format" id="newsletter-format-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
+                </div>
+            </fieldset>
+          </div>
+
+            <div class="other-topics-field main-padding">
+              <label for="newsletter-other">Other topics you'd like to hear about</label>
+              <div><textarea name="user_other-topics" id="newsletter-other"></textarea></div>
             </div>
 
-            <div class="format-field">
-              <div class="newsletter-format-label option">
-                <label>Newsletter format</label>
-              </div>
-              <div class="html-format option">
-                <input type="radio" name="user_newsletter-format" id="newsletter-format-html" value="html-format"><label for="newsletter-format-html">&nbsp;&nbsp;&nbsp;&nbsp;HTML</label>
-              </div>
-              <div class="plain-text-format option">
-                <input type="radio" name="user_newsletter-format" id="newsletter-receive-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
-              </div>
-          </fieldset>
-
-          <div class="other-topics-field">
-            <label for="newsletter-other">Other topics you'd like to hear about</label>
-            <div><textarea name="user_other-topics" id="newsletter-other"></textarea></div>
-          </div>
-
-          <div class="submit-button">
-            <button type="submit" name="button">Sign Up</button>
-          </div>
+            <div class="submit-button main-padding">
+              <button type="submit" name="button">Sign Up</button>
+            </div>
         </form>
 
       </main>
