@@ -22,18 +22,9 @@ h1 {
   letter-spacing: .05em;
 }
 
-h2,
-h3 {
-  margin:0 auto;
-  font-size: 1.25em;
-}
-
 h2 {
+  margin:0 auto;
   color: rgb(45, 57, 69);
-}
-
-.newletter-bg h3 {
-  color: white;
 }
 
 p {
@@ -62,6 +53,16 @@ fieldset {
 
 legend {
   text-align: left;
+  font-size:1.3em;
+  font-weight: 700;
+}
+
+.contact-info legend {
+  color: rgb(45, 57, 69);
+}
+
+.newletter-bg legend {
+  color: white;
 }
 
 input,
@@ -130,7 +131,7 @@ input[placeholder="Required"]::placeholder {
   color:rgb(185, 185, 185);
 }
 
-input[placeholder*="XXX"]::placeholder {
+input::placeholder {
   color: rgb(185, 185, 185);
 }
 
@@ -150,8 +151,9 @@ input[placeholder*="XXX"]::placeholder {
 
 .contact-info {
   /* border-bottom: 3px solid rgb(45, 57, 69); */
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   margin-bottom:0;
+  margin-top:60px;
 }
 
 .field {
@@ -192,7 +194,7 @@ input[type="checkbox"] {
 
 .newsletter-bg {
   background-color: rgb(45, 57, 69);
-  padding-top:20px;
+  padding-top:40px;
   padding-bottom: 40px;
   color:white;
 }
@@ -208,8 +210,8 @@ select:focus,
 textarea:focus {
   outline-color: rgb(13, 48, 101);
   text-indent: 30px;
-  background-color: rgb(45, 57, 69,.2);
-  transition: background-color 1s;
+  background-color: rgba(249, 236, 119,.5);
+  transition: background-color .5s;
 }
 
 button:focus {

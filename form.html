@@ -22,7 +22,7 @@
       <main>
         <form class="" action="form.html" method="post">
           <fieldset class="contact-info main-padding">
-            <legend><h3>Contact Information</h3></legend>
+            <legend>Contact Information</legend>
             <div class="name-field field">
               <label for="contact-name">Full Name</label>
               <input type="text" id="contact-name" name="user_name" placeholder="Required" required>
@@ -41,12 +41,14 @@ onblur="this.placeholder = '(XXX)-XXX-XXXX'">
 
             <div class="street-field field">
               <label for="contact-street">Street Address</label>
-              <input type="text" id="contact-street" name="user_street">
+              <input type="text" id="contact-street" name="user_street" placeholder="ex. 88&nbsp;Awesome-Sauce Avenue" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'ex. 88&nbsp;Awesome-Sauce Avenue'">
             </div>
 
             <div class="city-field field">
               <label for="contact-city">City</label>
-              <input type="text" name="user_city" id="contact-city">
+              <input type="text" name="user_city" id="contact-city" placeholder="ex. Burgerton" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'ex. Burgerton'">
             </div>
 
             <div class="state-field field">
@@ -66,13 +68,14 @@ onblur="this.placeholder = '(XXX)-XXX-XXXX'">
 
             <div class="zip-field field">
               <label for="contact-zip">Zip Code</label>
-              <input type="text" name="user_zip" id="contact-zip">
+              <input type="text" name="user_zip" id="contact-zip" placeholder="ex. 12345" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '12345'">
             </div>
           </fieldset>
 
           <div class="newsletter-bg">
             <fieldset class="newsletter main-padding">
-              <legend><h3>Newsletter</h3></legend>
+              <legend>Newsletter</legend>
 
               <div class="receive-field">
                 <div class="newsletter-receive-label option">
@@ -99,12 +102,14 @@ onblur="this.placeholder = '(XXX)-XXX-XXXX'">
                 <div class="plain-text-format option">
                   <input type="radio" name="user_newsletter-format" id="newsletter-format-plain" value="plain-text-format"><label for="newsletter-format-plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plain text</label>
                 </div>
+              </div>
             </fieldset>
           </div>
 
             <div class="other-topics-field main-padding">
               <label for="newsletter-other">Other topics you'd like to hear about</label>
-              <div><textarea name="user_other-topics" id="newsletter-other"></textarea></div>
+              <div><textarea name="user_other-topics" id="newsletter-other" placeholder="Type here..." onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Type here...'"></textarea></div>
             </div>
 
             <div class="submit-button main-padding">
